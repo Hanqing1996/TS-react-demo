@@ -1,0 +1,29 @@
+button {
+    margin: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    height: 32px;
+    padding: 0 1em;
+    border-radius: 4px;
+    border: 1px solid #999;
+    background: white;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;/*z-index: :auto;*/
+} 
+button:focus{
+    outline: none;
+    border: 1px solid black;
+    }
+
+.button-small{
+    font-size: 5px;
+}
+.button-big{
+    font-size: 20px;
+}
+
+
