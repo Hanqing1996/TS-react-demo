@@ -4,10 +4,13 @@ import './App.css';
 import Button from './button'
 
 export default class App extends React.Component {
+    onClick = (e: React.MouseEvent) => {
+        console.log(e)
+    }
     render() {
         return (
             <div className='App'>
-                <Button>普通按钮</Button>
+                <Button onClick={this.onClick}>普通按钮</Button>
                 <Button>
                     <span>1</span>
                     <span>2</span>

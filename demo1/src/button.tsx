@@ -1,14 +1,15 @@
 import React from 'react';
 import './button.css'
 
-// 使得 size 得以传递
-interface IProps{
-    size?:String,
-    children?:String|JSX.Element| Array<JSX.Element>
+interface IProps {
+    size?: String;
+    onClick?: React.MouseEventHandler
 }
 
-export default function Button(props:IProps){
+const Button: React.FunctionComponent<IProps> = function (props) {
     return (
-    <button className={`button-${props.size}`}> {props.children?props.children:'button'}</button>
+        <button className={`button-${props.size}`} onClick={props.onClick}> {props.children ? props.children : 'button'}</button>
     )
 }
+
+export default Button
